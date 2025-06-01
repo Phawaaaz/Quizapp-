@@ -36,7 +36,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
   const getUserInfo = async () => {
     try {
       setIsLoading(true);
-      const response = await fetch('http://localhost:3000/api/auth/users/me', {
+      const response = await fetch('https://quiz-app-7hcr.onrender.com/api/auth/users/me', {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',
@@ -80,7 +80,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
     try {
       setIsLoading(true);
       
-      const response = await fetch('https://quiz-app-production-c29a.up.railway.app/api/auth/login', {
+      const response = await fetch('https://quiz-app-7hcr.onrender.com/api/auth/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -122,7 +122,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
     try {
       setIsLoading(true);
       
-      const response = await fetch('https://quiz-app-production-c29a.up.railway.app/api/auth/register', {
+      const response = await fetch('https://quiz-app-7hcr.onrender.com/api/auth/register', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
